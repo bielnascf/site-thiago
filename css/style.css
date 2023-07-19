@@ -1,0 +1,76 @@
+body,html {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/assets/background-landing.jpg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icon-menu {
+    width: 100vw;
+    background-color:  rgba(233, 194, 147, 0.918);
+    display: block;
+}
+
+#openMenu {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#openMenu:hover {
+    background-color: rgba(148, 95, 30, 0.377);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.container-menu {
+    background-color: rgba(233, 194, 147, 0.918);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 500;
+    display: block;
+}
+
+.container-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.container-menu li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+.container-menu a {
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container-menu a:hover {
+    background-color: rgba(148, 95, 30, 0.575) ;
+}
+
+.icon-close-menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#closeMenu {
+    cursor: pointer;
+    font-size: 2rem;
+}
