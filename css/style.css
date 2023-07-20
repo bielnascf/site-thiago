@@ -8,7 +8,7 @@ body,html {
     background-attachment: fixed;
 }
 
-.icon-menu {
+.header-menu {
     width: 100vw;
     background-color:  rgba(233, 194, 147, 0.918);
     display: block;
@@ -35,7 +35,19 @@ body,html {
     width: 300px;
     font-family: 'Noto Serif', serif;
     font-weight: 500;
-    display: block;
+    display: none;
+
+    animation: slidein 0.3s ease-in;
+}
+
+@keyframes slidein {
+    from {
+    transform: translateX(-100%);
+    }
+
+    to {
+    transform: translateX(0%);
+    }
 }
 
 .container-menu ul {
@@ -70,7 +82,29 @@ body,html {
     align-items: center;
 }
 
+@keyframes slideout {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 #closeMenu {
     cursor: pointer;
     font-size: 2rem;
+    margin-bottom: 500px;
+}
+
+.container-snowFlake {
+    display: block;
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Noto Serif', serif;
+}
+
+.snowFlake {
+    width: 100px;
 }
