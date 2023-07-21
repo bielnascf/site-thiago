@@ -12,6 +12,7 @@ body,html {
     width: 100vw;
     background-color:  rgba(233, 194, 147, 0.918);
     display: block;
+    position: fixed;
 }
 
 #openMenu {
@@ -27,7 +28,7 @@ body,html {
 }
 
 .container-menu {
-    background-color: rgba(233, 194, 147, 0.918);
+    background-color: rgb(233, 194, 147);
     position: fixed;
     top: 0;
     left: 0;
@@ -36,6 +37,7 @@ body,html {
     font-family: 'Noto Serif', serif;
     font-weight: 500;
     display: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.267);
 
     animation: slidein 0.3s ease-in;
 }
@@ -65,7 +67,7 @@ body,html {
 .container-menu a {
     display: block;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 10px;
     border-radius: 5px;
 }
@@ -80,16 +82,6 @@ body,html {
     height: 100%;
     justify-content: center;
     align-items: center;
-}
-
-@keyframes slideout {
-    from {
-        transform: translateX(0%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
 }
 
 #closeMenu {
@@ -107,4 +99,115 @@ body,html {
 
 .snowFlake {
     width: 100px;
+}
+
+.typing  {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    left: 48px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.typing h4 {
+    width: 338px;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgb(0, 0, 0);
+    font-family: monospace;
+    padding: 5px;
+    margin-right: 44px;
+
+    color: rgb(0, 0, 0);
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+/* ---------------------------------------- */
+
+.container-landing-page {
+    background-color: rgba(233, 194, 147, 0.918);
+    margin: auto;
+    width: 80vw;
+    height: 85vh;
+    padding: 15px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.301);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.699);
+
+    animation: showIn 1s ease;
+}
+
+@keyframes showIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.container-landing-page  p {
+    line-height: 24px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.534);
+    text-align: justify;
+}
+
+.container-landing-page h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    font-family: 'Arial';
+}
+
+.title-content {
+    
+}
+
+.title-content h1{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+.maintance {
+
+}
+
+.instalation {
+
+}
+
+.cleaning {
+
+}
+
+.sanitation {
+
 }
