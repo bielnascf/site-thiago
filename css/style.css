@@ -13,7 +13,7 @@ body,html {
     width: 100%;
     background-color:  rgba(233, 194, 147, 0.918);
     display: block;
-    position: fixed;
+    position: absolute;
 }
 
 #openMenu {
@@ -134,11 +134,10 @@ body,html {
 .container-content {
     width: 80%;
 
-    position: fixed;
-    top: 55%;
+    position: relative;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: scroll;
 
     animation: showIn 0.5s ease-in;
 }
@@ -158,7 +157,7 @@ body,html {
 
 .snowFlake2 {
     display: block;
-    width: 100px;
+    width: 70px;
     margin: auto;
     padding-bottom: 10px;
 }
