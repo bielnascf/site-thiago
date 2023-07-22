@@ -1,7 +1,7 @@
 body,html {
     height: 100vh;
     width: 100vw;
-    background-image: url('/src/background-landing.jpg');
+    background-image: url('https://mozak.rio/wp-content/uploads/2017/12/mg_2405-hdr.jpg');
     background-repeat: no-repeat;
     background-position: center left;
     background-size: cover;
@@ -173,19 +173,18 @@ body,html {
 .content h1 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 5px;
     font-weight: bolder;
+    margin-bottom: 5px;
 }
 
 #slogan {
     text-align: center;
-
 }
 
-
 .content p {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.699);
+    border-bottom: 2px solid rgba(148, 95, 30, 0.637);
     margin-bottom: 10px;
 
     font-size: 1.2rem;
+    font-family: 'Noto Serif', serif;
 }
