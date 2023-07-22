@@ -107,7 +107,7 @@ body,html {
     color: rgb(0, 0, 0);
     font-weight: bolder;
     margin: auto;
-    width: 275px;
+    width: 250px;
 
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 
