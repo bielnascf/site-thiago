@@ -132,15 +132,18 @@ body,html {
 /* ---------------------------------------- */
 
 .container-content {
-    height: 100%;
     width: 80%;
 
     position: fixed;
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: scroll;
 
     animation: showIn 0.5s ease-in;
+}
+::-webkit-scrollbar {
+    width: 0;
 }
 
 @keyframes showIn {
