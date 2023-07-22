@@ -13,7 +13,7 @@ body,html {
     width: 100vw;
     background-color:  rgba(233, 194, 147, 0.918);
     display: block;
-    position: absolute;
+    position: fixed;
 }
 
 #openMenu {
@@ -132,11 +132,13 @@ body,html {
 /* ---------------------------------------- */
 
 .container-content {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80vw;
-    height: 70vh;
+    margin: auto;
 
-    animation: showIn 0.5s ease-in-out;
+    animation: showIn 0.5s ease-in;
 }
 
 @keyframes showIn {
