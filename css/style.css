@@ -1,7 +1,7 @@
 body,html {
     height: 100vh;
     width: 100vw;
-    background-image: url('/assets/background-landing.jpg');
+    background-image: url('/src/background-landing.jpg');
     background-repeat: no-repeat;
     background-position: center left;
     background-size: cover;
@@ -28,7 +28,7 @@ body,html {
 }
 
 .container-menu {
-    background-color: rgb(233, 194, 147);
+    background-color: rgba(233, 194, 147, 0.89);
     position: fixed;
     top: 0;
     left: 0;
@@ -104,22 +104,21 @@ body,html {
 .typing  {
     display: flex;
     position: absolute;
-    top: 8px;
+    top: 10px;
     left: 100px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: monospace;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
     margin: auto;
+    width: 275px;
 
-    width: 300px;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid rgb(0, 0, 0);
     padding: 5px;
-
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
 }
 
 @keyframes typing {
@@ -136,3 +135,57 @@ body,html {
 
 /* ---------------------------------------- */
 
+.container-content {
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px #00000088;
+    background: rgba(233, 194, 147, 0.89);
+    padding: 20px;
+    border-radius: 10px;
+
+    animation: showIn 0.5s ease-in-out;
+}
+
+@keyframes showIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.snowFlake2 {
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.content {
+    line-height: 2rem;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+#slogan {
+    text-align: center;
+
+}
+
+
+.content p {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.699);
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+}

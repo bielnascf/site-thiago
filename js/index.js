@@ -2,7 +2,7 @@ const openMenu = document.querySelector('#openMenu');
 const closeMenu = document.querySelector('#closeMenu');
 
 const menu = document.querySelector('.container-menu');
-const content = document.querySelector('.container-landing-page')
+const content = document.querySelector('.container-content')
 
 
 openMenu.addEventListener("click", () => {
