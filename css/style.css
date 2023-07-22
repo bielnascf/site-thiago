@@ -1,6 +1,6 @@
 body,html {
-    height: 100vh;
-    width: 100vw;
+    height: 99vh;
+    width: 99vw;
     background-image: url('https://mozak.rio/wp-content/uploads/2017/12/mg_2405-hdr.jpg');
     background-repeat: no-repeat;
     background-position: center left;
@@ -10,7 +10,7 @@ body,html {
 }
 
 .header-menu {
-    width: 100vw;
+    width: 100%;
     background-color:  rgba(233, 194, 147, 0.918);
     display: block;
     position: fixed;
@@ -107,7 +107,7 @@ body,html {
     color: rgb(0, 0, 0);
     font-weight: bolder;
     margin: auto;
-    width: 250px;
+    width: 278px;
 
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 
@@ -132,11 +132,13 @@ body,html {
 /* ---------------------------------------- */
 
 .container-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-    margin: auto;
+    height: 100%;
+    width: 80%;
+
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     animation: showIn 0.5s ease-in;
 }
