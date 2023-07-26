@@ -1,6 +1,8 @@
+@charset "UTF-8";
+
 body,html {
-    height: 99vh;
-    width: 99vw;
+    height: 100vh;
+    width: 100vw;
     background-image: url('https://mozak.rio/wp-content/uploads/2017/12/mg_2405-hdr.jpg');
     background-repeat: no-repeat;
     background-position: center left;
@@ -76,7 +78,6 @@ body,html {
 
 .icon-close-menu {
     display: flex;
-    height: 100%;
     justify-content: center;
     margin-top: 150px;
 }
@@ -84,6 +85,11 @@ body,html {
 #closeMenu {
     cursor: pointer;
     font-size: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+#closeMenu:hover {
+    transform: scale(1.2);
 }
 
 .container-snowFlake {
@@ -179,12 +185,19 @@ body,html {
 
 #slogan {
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .content p {
     border-bottom: 2px solid rgba(148, 95, 30, 0.637);
     margin-bottom: 10px;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Noto Serif', serif;
+}
+
+.content h2 {
+    background-color: rgba(192, 102, 50, 0.719);
+    padding: 5px;
+    border-radius: 5px;
 }

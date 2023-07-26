@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* 
         Typical Device Breakpoints 
 ------------------------------------------------
@@ -15,3 +17,14 @@
     
 } 
 */
+
+@media screen and (min-width: 993px) {
+    .container-content {
+        width: 800px;
+    }
+
+    .typing {
+        position: absolute;
+        left: 43%;
+    }
+}
