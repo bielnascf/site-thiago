@@ -162,7 +162,7 @@ body,html {
 }
 
 .snowFlake2 {
-    display: block;
+    display: none;
     width: 70px;
     margin: auto;
     padding-bottom: 10px;
