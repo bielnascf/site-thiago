@@ -17,17 +17,3 @@
     
 } 
 */
-@media screen and (min-width: 769px) {
-    .snowFlake2 {display: block}
-}
-
-@media screen and (min-width: 993px) {
-    .container-content {
-        width: 800px;
-    }
-
-    .typing {
-        position: absolute;
-        left: 43%;
-    }
-}

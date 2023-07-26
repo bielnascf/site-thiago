@@ -12,5 +12,5 @@ openMenu.addEventListener("click", () => {
 
 closeMenu.addEventListener("click", () => {
     menu.style.display = "none";
-    content.style.display = "block";
+    content.style.display = "flex";
 })
