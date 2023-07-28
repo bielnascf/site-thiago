@@ -3,16 +3,16 @@
 body,html {
     height: 100vh;
     width: 100vw;
-    background-image: url('https://mozak.rio/wp-content/uploads/2017/12/mg_2405-hdr.jpg');
+    background-image: url('https://seupaschoal.blog.br/wp-content/uploads/2022/12/shutterstock_1498805075.jpg');
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .header-menu {
     width: 100%;
-    background-color:  rgba(233, 194, 147, 0.918);
+    background-color:  #091c3ae5;
     display: block;
     position: absolute;
 }
@@ -21,22 +21,25 @@ body,html {
     cursor: pointer;
     padding: 10px;
     font-size: 2rem;
+    filter: invert(1);
 }
 
 #openMenu:hover {
-    background-color: rgba(148, 95, 30, 0.377);
-    border-radius: 0px 5px 5px 0px;
+    background-color: #ffff;
+    filter: invert(0);
+    border-radius: 0px 2px 2px 0px;
 }
 
 .container-menu {
-    background-color: rgba(233, 194, 147, 0.89);
+    background-color: #091c3ae5;
+    color: #ffff;
     width: 300px;
     height: 100vh;
     position: fixed;
     font-family: 'Noto Serif', serif;
     font-weight: 500;
     display: none;
-    border-right: 1px solid rgba(255, 255, 255, 0.267);
+    border-right: 1px solid #ffffff44;
 
     animation: slidein 0.3s ease-in;
 }
@@ -60,19 +63,21 @@ body,html {
 .container-menu li {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+    border-bottom: 1px solid #ffffff44;
 }
 
 .container-menu a {
     display: block;
-    color: black;
+    color: #ffff;
     font-size: 1.3rem;
     padding: 10px;
     border-radius: 5px;
 }
 
 .container-menu a:hover {
-    background-color: rgba(148, 95, 30, 0.575) ;
+    background-color: #ffffff ;
+    color: #000000;
+    font-weight: bolder;
 }
 
 .icon-close-menu {
@@ -100,6 +105,7 @@ body,html {
 .snowFlake {
     width: 100px;
     margin-top: 100px;
+    filter: invert(1);
 }
 
 .typing  {
@@ -109,7 +115,7 @@ body,html {
     left: 80px;
     font-size: 1.1rem;
     font-family: monospace;
-    color: rgb(0, 0, 0);
+    color: #ffff;
     font-weight: bolder;
     margin: auto;
     width: 278px;
@@ -118,7 +124,7 @@ body,html {
 
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid #ffffff;
     padding: 5px;
 }
 
@@ -164,15 +170,17 @@ body,html {
     width: 70px;
     margin: auto;
     padding-bottom: 10px;
+    filter: invert(1);
 }
 
 .content {
     width: fit-content;
-    background-color: rgba(233, 194, 147, 0.89);
+    background-color: #091c3ae5;
+    color: #ffff;
     padding: 20px;
     margin-top: 4rem;
     border-radius: 10px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.548);
+    box-shadow: 0px 1px 3px #0000008c;
 }
 
 .content h1 {
@@ -188,7 +196,7 @@ body,html {
 }
 
 .content p {
-    border-bottom: 2px solid rgba(148, 95, 30, 0.637);
+    border-bottom: 2px solid #ffff;
     margin-bottom: 10px;
 
     font-size: 1rem;
@@ -196,7 +204,7 @@ body,html {
 }
 
 .content h2 {
-    background-color: rgba(192, 102, 50, 0.719);
+    background-color: #757575ab;
     padding: 5px;
     border-radius: 5px;
 }
